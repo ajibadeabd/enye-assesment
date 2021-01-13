@@ -7,21 +7,20 @@ class userService {
     async rate(req,res){  
         // get the api data
         let {data} =await axios.get('https://api.exchangeratesapi.io/latest') 
-        // let me =await axios.get('http://api.enye.tech/v1/challenge/records') 
-        // console.log(me.data)
 
-//     value of EUR is 1 because EUR will be one since it is the default base
+//     value of EUR is 1 because EUR will be one since it is the default base .
         data.rates["EUR"]=1
         console.log(data)
         let base=req.query.base 
         let currency=req.query.currency
-        let eachCurrency=req.query.currency.split(",")
         if(!base ||!currency){
                 throw new customError('please include the currency and the base variable',400)
         }
             if(data.rates[base]==undefined){
                 throw new customError('you have entered an inavlid base variable ',400)
             }
+        let eachCurrency=req.query.currency.split(",")
+
             let error= []
             eachCurrency.forEach(each => {
             console.log(data.rates[each])

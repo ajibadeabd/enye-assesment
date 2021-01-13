@@ -1,4 +1,125 @@
-.App {
+.main__body{
+  background-color: rgb(208, 207, 214);
+}
+.user__manager{
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.user__info{
+  color:rgb(240, 92, 92);
+  font-size: 20px;
+
+}
+.user__data{
+  padding-left: 20px;
+  background-color: #fff;
+}
+.second__section{
+  padding:15px;
+  padding:20px;
+  background-color: #fff;
+  display: flex;
+
+}
+.search__sort{
+width:20%;
+
+}
+.search{
+  padding:5px;
+  margin:5px;
+  border-radius: 4px;
+  width:150px;
+
+}
+.sort__by{
+  font-size: 23px;
+  margin:0px;
+  margin-top:20px;
+}
+.radio{
+ padding-right:10px;
+
+}
+label{
+  font-size: 14px;
+ padding-left:10px;
+
+}
+.select{
+  margin: 0px;
+  padding: 0px;
+}
+
+.search__sort1{
+  background-color: rgb(230, 219, 219);
+  width: 25%;
+  max-height: 550px;
+
+}
+
+.search__sort2{
+  background-color: rgb(187, 248, 95);
+  width: 75%;
+  max-height: 550px;
+  overflow-y: scroll;
+}
+
+tbody>tr>th,tbody>tr>td{
+  /* max-height: 20px !important; */
+  padding: 0px 0px 0px 15px!important;
+  margin: 0px !important;
+  /* background-color: rgb(54, 16, 192); */
+align-items: center !important;
+
+}
+
+thead>tr>th{
+/* padding: 30px 0px !important; */
+font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +156,55 @@
   to {
     transform: rotate(360deg);
   }
+} */
+nav{
+  margin-bottom: 10px !important ;
+}
+.items{
+  /* padding:auto; */
+  /* display: flex !important;
+  justify-content: space-between !important; */
+}
+.search-btn:hover{
+  color:blue !important;
+  background-color:white !important;
+
+}
+.profile{
+  color:white !important;
+
+}
+.sorttext{
+  color:white !important;
+  margin-top: 6px;
+  margin-right: 6px;
+
+}
+.sort{
+  width:100px  !important;
+  border-radius: 3px !important;
+  margin-right: 6px;
+
+  border:1px solid whitesmoke !important;
+}
+.white {
+  color:white !important;
+  border:1px solid whitesmoke !important;
+}
+.prev,.next{
+width:80px;
+padding: 10px 0px;
+color:white;
+text-align: center;
+background-color: rgb(67, 67, 216);
+border-radius: 4px;
+}
+.next{
+
+}
+.paginationcon{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding: 10px 20px;
 }
